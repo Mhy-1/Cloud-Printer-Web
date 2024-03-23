@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+.main-container {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.cards-container {
+  width: 50rem;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.btn-login {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-outline label {
+  color: #333333 !important;
+}
+
+.form-outline input {
+  border-radius: 5px !important;
+  border: 2px solid #cccccc !important;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out !important;
+  width: 40rem;
+}
+
+.form-outline input:not(:placeholder-shown)+label {
+  transform: translate(-10px, -22px) scale(0.8) !important;
+  color: #777777 !important;
+}
+
+.form-outline input::-webkit-input-placeholder {
+  color: #cccccc !important;
+}
+
+.form-outline input:-ms-input-placeholder {
+  color: #cccccc !important;
+}
+
+.form-outline input::placeholder {
+  color: #cccccc !important;
+}
+
+.form-outline input:focus::-webkit-input-placeholder {
+  color: #00bcd4 !important;
+}
+
+.form-outline input:focus:-ms-input-placeholder {
+  color: #00bcd4 !important;
+}
+
+.form-outline input:focus::placeholder {
+  color: #00bcd4 !important;
+}
+
+.bg-image {
+  background-image: url("../images/landing.jpg");
+  height: 100vh;
+}
+
+@media screen and (max-width: 576px) {}
+
+
+.about-cards {
+  padding: 50px 0;
+}
+
+.about-cards .card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.about-cards .card:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-cards .card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.about-cards .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px 10px 0 0;
+}
+
+.about-cards .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.about-cards .card-text {
+  font-size: 16px;
+  color: #aaaaaa;
+  margin-bottom: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.about-cards .card:hover .card-title,
+.about-cards .card:hover .card-text {
+  color: #666;
+}
+
+@media (min-width: 576px) {
+  .about-cards .col {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-cards .col {
+    max-width: 33.333%;
+  }
+}
+
+.contact-cards {
+  padding: 50px 0;
+}
+
+.contact-cards .card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.contact-cards .card:hover {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-cards .card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.contact-cards .card-img-top {
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 10px 10px 0 0;
+}
+
+.contact-cards .card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-cards .card-text {
+  font-size: 16px;
+  color: #aaaaaa;
+  margin-bottom: 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-cards .card:hover .card-title,
+.contact-cards .card:hover .card-text {
+  color: #666;
+}
+
+@media (min-width: 576px) {
+  .contact-cards .col {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-cards .col {
+    max-width: 33.333%;
+  }
+}
